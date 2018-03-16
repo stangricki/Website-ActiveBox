@@ -193,14 +193,24 @@ nav ul li a:hover {
 }
 
 .work-container {
-	visibility: hidden;
-	background-color: #e84545AA;
+	opacity: 0;
 	height: 100%;
 	font-family: 'Raleway', sans-serif;
 	color: #FFF;
 }
+
+.works-photo-1 > .work-container {background-color: #f6b93bAA}
+.works-photo-2 > .work-container {background-color: #78e08fAA}
+.works-photo-3 > .work-container {background-color: #e84545AA}
+.works-photo-4 > .work-container {background-color: #4a69bdAA}
+.works-photo-5 > .work-container {background-color: #78e08fAA}
+.works-photo-6 > .work-container {background-color: #4a69bdAA}
+.works-photo-7 > .work-container {background-color: #f6b93bAA}
+.works-photo-8 > .work-container {background-color: #e84545AA}
+
 [class^="works-photo"]:hover .work-container {
-	visibility: visible;
+	transition: 0.3s;
+	opacity: 1;
 }
 
 .work-container > h4{
